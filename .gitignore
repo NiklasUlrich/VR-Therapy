@@ -98,11 +98,11 @@ $RECYCLE.BIN/
 *.lnk
 
 # Wwise
-gARden_WwiseProject/.cache/
-gARden_WwiseProject/*.prof
-gARden_WwiseProject/*_WwiseProject.*.validationcache
-gARden_WwiseProject/*_WwiseProject.*.wsettings
-gARden_WwiseProject/**/*.akd
+VRTherapy_WwiseProject/.cache/
+VRTherapy_WwiseProject/*.prof
+VRTherapy_WwiseProject/*_WwiseProject.*.validationcache
+VRTherapy_WwiseProject/*_WwiseProject.*.wsettings
+VRTherapy_WwiseProject/**/*.akd
 
 #big tarballs
 /[Pp]ackages/com.ptc.vuforia.engine-10.7.2.tgz
