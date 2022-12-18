@@ -34,7 +34,7 @@ ExportedObj/
 .consulo/
 *.csproj
 *.unityproj
-*.sln
+#*.sln
 *.suo
 *.tmp
 *.user
@@ -105,4 +105,4 @@ VRTherapy_WwiseProject/*_WwiseProject.*.wsettings
 VRTherapy_WwiseProject/**/*.akd
 
 #big tarballs
-/[Pp]ackages/com.ptc.vuforia.engine-10.7.2.tgz
+#/[Pp]ackages/com.ptc.vuforia.engine-10.7.2.tgz
