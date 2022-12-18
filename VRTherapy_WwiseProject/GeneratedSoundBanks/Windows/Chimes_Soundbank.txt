@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	44995161	Play_windchime_am_sound			\Default Work Unit\Play_windchime_am_sound	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	697062360	windchime1-7065	C:\Users\Niklas Ulrich\Documents\Unity\My project (1)\My project (1)_WwiseProject\.cache\Windows\SFX\windchime1-7065_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\windchime1-7065		2304064
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{04501DB7-388E-468B-AC1D-AB20AD83D3BB}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{04501DB7-388E-468B-AC1D-AB20AD83D3BB}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Chimes_Soundbank" ID="{71A726A6-DA37-4812-9F0C-9F8EB456BE8B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_windchime_am_sound" ID="{7BBD6FAD-C945-49E6-80D1-EEB79928863C}" WorkUnitID="{C7D9642C-F3EE-4B77-AAC2-A9337F6AFA57}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

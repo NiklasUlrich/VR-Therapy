@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Niklas Ulrich\Documents\Unity\My project (1)\My project (1)_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Niklas Ulrich\Documents\Unity\My project (1)\My project (1)_WwiseProject\.cache\Android\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Niklas Ulrich\Documents\Unity\My project (1)\My project (1)_WwiseProject\GeneratedSoundBanks\Android\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Niklas Ulrich\Documents\Unity\My project (1)\My project (1)_WwiseProject\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2901137828">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3091606164" Language="SFX" Hash="2355935839">
+			<ObjectPath>\SoundBanks\Default Work Unit\Chimes_Soundbank</ObjectPath>
+			<ShortName>Chimes_Soundbank</ShortName>
+			<Path>Chimes_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="44995161" Name="Play_windchime_am_sound" ObjectPath="\Events\Default Work Unit\Play_windchime_am_sound" DurationType="OneShot" DurationMin="12." DurationMax="12.">
+					<IncludedMemoryFiles>
+						<File Id="697062360" Language="SFX">
+							<ShortName>windchime1-7065.wav</ShortName>
+							<Path>SFX\windchime1-7065_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
