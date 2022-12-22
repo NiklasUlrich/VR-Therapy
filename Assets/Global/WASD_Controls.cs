@@ -21,9 +21,15 @@ public class WASD_Controls : MonoBehaviour
 
     private void Move()
     {
-        Vector3 Movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
 
-        gameObject.transform.position += Movement * moveSpeed * Time.deltaTime;
+        Vector3 movement = transform.forward * vertical + transform.right * horizontal;
+        /*
+        Vector3 Movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        */
+        gameObject.transform.position += moveSpeed * Time.deltaTime * movement;
+        
     }
 
     private void Rotate()
