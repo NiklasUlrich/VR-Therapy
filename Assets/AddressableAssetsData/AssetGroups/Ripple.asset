@@ -35,6 +35,7 @@ MonoBehaviour:
     m_SerializedLabels:
     - scene
     - experience
+    - ripple
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7182605bdf4880c47a50e519513f028a, type: 2}
   m_SchemaSet:
