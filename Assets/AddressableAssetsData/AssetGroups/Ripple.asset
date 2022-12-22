@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Ripple
+  m_EditorClassIdentifier: 
+  m_GroupName: Ripple
+  m_Data:
+    m_SerializedData: []
+  m_GUID: e4b719856ed5cd74181662f0d12f84d4
+  m_SerializeEntries:
+  - m_GUID: 7187932e46425a14bac1d0b8a0dc24e6
+    m_Address: Assets/Scenes/Ripple/Skripts
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 36612cbb3fa61df4fb00defd16af7b7f
+    m_Address: Assets/Scenes/Ripple/Prefabs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4ff562447c21fae4fb3af5ad3a58bd8a
+    m_Address: Assets/Scenes/Ripple/Materials
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9fc0d4010bbf28b4594072e72b8655ab
+    m_Address: Assets/Scenes/Ripple/RippleScene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - scene
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 7182605bdf4880c47a50e519513f028a, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 77ac008945049444b9b8c78136ac3e64, type: 2}
+    - {fileID: 11400000, guid: 4183cb4d85bdcef46bc9c7210778e0ff, type: 2}
