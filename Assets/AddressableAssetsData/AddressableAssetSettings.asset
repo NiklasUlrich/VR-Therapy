@@ -46,6 +46,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db5f992f47be0e2469cda6bff3db844f, type: 2}
   - {fileID: 11400000, guid: 98ab56f0bee499244a887948bd61a6ad, type: 2}
   - {fileID: 11400000, guid: 8e0ff97a62c06964392ed0c26721b5eb, type: 2}
+  - {fileID: 11400000, guid: 773dfbdab0e8db94cab8dba3619e71da, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -90,6 +91,7 @@ MonoBehaviour:
     - experience
     - ripple
     - nature
+    - base
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: caa2a152241298e4a9469e7377d8df94, type: 2}

@@ -20,13 +20,17 @@ MonoBehaviour:
   - m_GUID: 1b7183ccc3762de4291c904092362fd8
     m_Address: Assets/Scenes/Nature/Nature.unity
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - experience
-    - nature
+    m_SerializedLabels: []
   - m_GUID: c5349b943bd13094e9a12015e35937fc
     m_Address: Assets/Scenes/Nature/Materials
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 6f619bdb5602b5742b763e73838a7439
+    m_Address: Assets/Scenes/Nature/AN_Demo.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - nature
+    - experience
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7182605bdf4880c47a50e519513f028a, type: 2}
   m_SchemaSet:
