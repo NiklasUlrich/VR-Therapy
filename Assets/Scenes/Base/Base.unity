@@ -1108,6 +1108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1757375102}
   - component: {fileID: 1757375101}
+  - component: {fileID: 1757375103}
   m_Layer: 0
   m_Name: XRPlatformControllerSetup
   m_TagString: Untagged
@@ -1146,6 +1147,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1757375103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757375100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9880fe411c38cb4a9feb8c5f23841e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1856566722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,6 +1169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1856566724}
   - component: {fileID: 1856566723}
+  - component: {fileID: 1856566725}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1204,6 +1218,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1856566725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856566722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9880fe411c38cb4a9feb8c5f23841e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1931801636
 PrefabInstance:
   m_ObjectHideFlags: 0
