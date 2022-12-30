@@ -20,11 +20,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 02bf7a69645270418e2350098c271f3d
+      guid: 53ff26bf1f62c641b208cf234251ecdf
     ParentPath: Virtual Acoustics\Default Work Unit
-    guid: 02bf7a69645270418e2350098c271f3d
+    guid: 53ff26bf1f62c641b208cf234251ecdf
     GuidInternal: 
-    m_lastTime: -8585333375911933377
+    m_lastTime: -8585292077847853074
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -34,11 +34,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 819a541fd6d88b44aad466f290a30e4e
+      guid: fb5d446b8f38724fadb325909d0b6c7a
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
-    guid: 819a541fd6d88b44aad466f290a30e4e
+    guid: fb5d446b8f38724fadb325909d0b6c7a
     GuidInternal: 
-    m_lastTime: -8585333375912784148
+    m_lastTime: -8585292077848974235
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -49,7 +49,7 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 819a541fd6d88b44aad466f290a30e4e
+        guid: fb5d446b8f38724fadb325909d0b6c7a
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -62,26 +62,26 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: b71d50048e388b46ac1dab20ad83d3bb
+      guid: 6b29c23b13544b4c885e6a712816e136
     ParentPath: SoundBanks\Default Work Unit
-    guid: b71d50048e388b46ac1dab20ad83d3bb
+    guid: 6b29c23b13544b4c885e6a712816e136
     GuidInternal: 
-    m_lastTime: -8585332549232854533
+    m_lastTime: -8585292066921079593
     List:
-    - name: Chimes_Soundbank
-      guid: a626a77137da12489f0c9f8eb456be8b
-      id: 3091606164
+    - name: Environment
+      guid: 479a2e9195ad05408d0cce9c7c760b93
+      id: 1229948536
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: b71d50048e388b46ac1dab20ad83d3bb
-      - ElementName: Chimes_Soundbank
+        guid: 6b29c23b13544b4c885e6a712816e136
+      - ElementName: Environment
         ObjectType: 7
-        guid: a626a77137da12489f0c9f8eb456be8b
-      Path: SoundBanks\Default Work Unit\Chimes_Soundbank
+        guid: 479a2e9195ad05408d0cce9c7c760b93
+      Path: SoundBanks\Default Work Unit\Environment
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -90,29 +90,42 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 2c64d9c7eef3774baac2a9337f6afa57
+      guid: c62f5cf58226a14fba0982a31fff7498
     ParentPath: Events\Default Work Unit
-    guid: 2c64d9c7eef3774baac2a9337f6afa57
+    guid: c62f5cf58226a14fba0982a31fff7498
     GuidInternal: 
-    m_lastTime: -8585332549232764453
+    m_lastTime: -8585292068674922126
+    List: []
+  - PhysicalPath: Events\Environment.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Environment
+      ObjectType: 12
+      guid: becaf3b488d6ce439c2d4678d2730905
+    ParentPath: Events\Environment
+    guid: becaf3b488d6ce439c2d4678d2730905
+    GuidInternal: 
+    m_lastTime: -8585292068674851980
     List:
-    - name: Play_windchime_am_sound
-      guid: ad6fbd7b45c9e64980d1eeb79928863c
-      id: 44995161
+    - name: Play_windchime1_7065
+      guid: 629eb532f4525848a051a950dc3425ea
+      id: 3599228714
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: Environment
         ObjectType: 12
-        guid: 2c64d9c7eef3774baac2a9337f6afa57
-      - ElementName: Play_windchime_am_sound
+        guid: becaf3b488d6ce439c2d4678d2730905
+      - ElementName: Play_windchime1_7065
         ObjectType: 3
-        guid: ad6fbd7b45c9e64980d1eeb79928863c
-      Path: Events\Default Work Unit\Play_windchime_am_sound
+        guid: 629eb532f4525848a051a950dc3425ea
+      Path: Events\Environment\Play_windchime1_7065
       maxAttenuation: 0
-      maxDuration: 12
-      minDuration: 12
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -121,11 +134,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 28f9c3db9892e34b8d9965447f0eaab0
+      guid: 7b38d02d9cd3664083d50611f05a0c58
     ParentPath: Game Parameters\Default Work Unit
-    guid: 28f9c3db9892e34b8d9965447f0eaab0
+    guid: 7b38d02d9cd3664083d50611f05a0c58
     GuidInternal: 
-    m_lastTime: -8585333375911703164
+    m_lastTime: -8585292077848423594
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -135,11 +148,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 3fe1227ddbc96844a487eabfc66c57b3
+      guid: 3af2b7709dc8f445afcc5bfc5734d722
     ParentPath: States\Default Work Unit
-    guid: 3fe1227ddbc96844a487eabfc66c57b3
+    guid: 3af2b7709dc8f445afcc5bfc5734d722
     GuidInternal: 
-    m_lastTime: -8585333375912133561
+    m_lastTime: -8585292077848293476
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -149,11 +162,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: d4aba832f13aad4c92032f3c41248307
+      guid: 4d7aec8de0d58c428681287c3eae2e21
     ParentPath: Switches\Default Work Unit
-    guid: d4aba832f13aad4c92032f3c41248307
+    guid: 4d7aec8de0d58c428681287c3eae2e21
     GuidInternal: 
-    m_lastTime: -8585333375911813270
+    m_lastTime: -8585292077848784063
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -163,15 +176,15 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 39131684d249c54c8ef8a0fd84289ce9
+      guid: f8c510618707914886c9ec5449e9009c
     ParentPath: Triggers\Default Work Unit
-    guid: 39131684d249c54c8ef8a0fd84289ce9
+    guid: f8c510618707914886c9ec5449e9009c
     GuidInternal: 
-    m_lastTime: -8585333375911502990
+    m_lastTime: -8585292077847482743
     List: []
-  ExpandedFileSystemItemIds: 0300000004000000050000000600000007000000090000000a0000000b0000000d0000000f00000010000000
-  ExpandedWaapiItemIds: 0300000004000000050000000600000007000000090000000a0000000b0000000d0000000f00000010000000
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 06000000080000000c0000000d00000015000000
   AutoSyncSelection: 0
-  autoPopulateEnabled: 0
-  currentDataSource: 1
+  autoPopulateEnabled: 1
+  currentDataSource: 0
   CurrentPluginConfig: 

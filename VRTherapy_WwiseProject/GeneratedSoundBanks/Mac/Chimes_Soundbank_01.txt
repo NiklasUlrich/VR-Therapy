@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	4235265352	Play_windchime			\Default Work Unit\Play_windchime	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	109594306	windchime1-7065	C:\Users\Niklas Ulrich\Documents\Unity\My project (1)\My project (1)_WwiseProject\.cache\Mac\SFX\windchime1-7065_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\windchime1-7065\windchime1-7065		2304064
-
