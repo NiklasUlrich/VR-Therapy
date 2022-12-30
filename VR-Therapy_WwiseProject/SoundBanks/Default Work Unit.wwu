@@ -4,7 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{3BC2296B-5413-4C4B-885E-6A712816E136}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Environment" ID="{912E9A47-AD95-4005-8D0C-CE9C7C760B93}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_windchime1_7065" ID="{32B59E62-52F4-4858-A051-A950DC3425EA}" WorkUnitID="{B4F3CABE-D688-43CE-9C2D-4678D2730905}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
