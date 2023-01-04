@@ -6,7 +6,6 @@ public class ChainEvent : ExperienceEvent
 {
     public bool WaitForPreviousEventToFinishFirst;
     public ExperienceEvent PreviousEvent;
-    private bool started = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,12 +17,11 @@ public class ChainEvent : ExperienceEvent
     void Update()
     {
         
-        if (!started && PreviousEvent.Started())
+        if (!Triggered() && PreviousEvent.Started())
         {
             if(!WaitForPreviousEventToFinishFirst || PreviousEvent.Finished())
             {
                 StartEvent();
-                started = true;
             }
         }
     }

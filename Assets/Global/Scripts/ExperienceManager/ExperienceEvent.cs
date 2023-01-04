@@ -11,8 +11,8 @@ public class ExperienceEvent : MonoBehaviour
     //the delay with which the eventactions will be started
     public float delayInSeconds;
 
-   
-    private bool started = false;
+    private bool started = false; //true once all actions are started
+    private bool triggered = false; //true once InitializeEvent() was called
 
     protected void StartEvent()
     {
@@ -22,6 +22,7 @@ public class ExperienceEvent : MonoBehaviour
     //executes all of the events actions, then sets finished to true
     private IEnumerator InitializeEvent()
     {
+        triggered = true;
         yield return new WaitForSeconds(delayInSeconds);
 
         if(eventActions != null ){
@@ -47,9 +48,13 @@ public class ExperienceEvent : MonoBehaviour
         return started; //returns started cause the event should only be considered finished after being started
     }
     
-
     public bool Started()
     {
         return started;
+    }
+
+    public bool Triggered()
+    {
+        return triggered;
     }
 }
