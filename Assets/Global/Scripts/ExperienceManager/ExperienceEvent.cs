@@ -9,7 +9,7 @@ public class ExperienceEvent : MonoBehaviour
     public List<EventAction> eventActions;
 
     //the delay with which the eventactions will be started
-    public int delayInSeconds;
+    public float delayInSeconds;
 
    
     private bool started = false;
@@ -24,22 +24,27 @@ public class ExperienceEvent : MonoBehaviour
     {
         yield return new WaitForSeconds(delayInSeconds);
 
-        foreach (EventAction eventAction in eventActions)
-        {
-            eventAction.StartAction();
+        if(eventActions != null ){
+            foreach (EventAction eventAction in eventActions)
+            {
+                eventAction.StartAction();
+            }
         }
-
         started = true;
     }
 
     //returns true if all contained actions have been fully executed
     public bool Finished()
     {
-        foreach (EventAction eventAction in eventActions)
+        if (eventActions != null)
         {
-            if (!eventAction.Finished()) return false;
+            foreach(EventAction eventAction in eventActions)
+            {
+                if (!eventAction.Finished()) return false;
+            }
+            return started; //returns started cause the event should only be considered finished after being started
         }
-        return true;
+        return started; //returns started cause the event should only be considered finished after being started
     }
     
 

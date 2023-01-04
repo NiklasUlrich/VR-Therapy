@@ -1399,9 +1399,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1532966614}
-  - component: {fileID: 1532966613}
+  - component: {fileID: 1532966615}
   - component: {fileID: 1532966612}
   - component: {fileID: 1532966611}
+  - component: {fileID: 1532966616}
   - component: {fileID: 1532966610}
   m_Layer: 0
   m_Name: EventTest
@@ -1422,7 +1423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4355ae96f6bfedf4a80b1d2da9ed8923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Test 2
+  text: Test B
 --- !u!114 &1532966611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1435,7 +1436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4355ae96f6bfedf4a80b1d2da9ed8923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Test 1
+  text: Test A
 --- !u!114 &1532966612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1449,25 +1450,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventActions:
-  - {fileID: 1532966610}
-  delay: 0
-  WaitForPreviousEventToFinishFirst: 1
-  PreviousEvent: {fileID: 1532966613}
---- !u!114 &1532966613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532966609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c910d88d02b22fe45b6d2790e1cdb266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eventActions:
   - {fileID: 1532966611}
-  delay: 0
+  delayInSeconds: 0
+  WaitForPreviousEventToFinishFirst: 1
+  PreviousEvent: {fileID: 0}
 --- !u!4 &1532966614
 Transform:
   m_ObjectHideFlags: 0
@@ -1483,6 +1469,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1532966615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532966609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1415d573cd1eb4f9cbb0aea94f7d26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - {fileID: 1532966612}
+  - {fileID: 1532966616}
+  initialDelayInSeconds: 0
+--- !u!114 &1532966616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532966609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6cb13ae0c1d5504da15ec80ad6949a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventActions:
+  - {fileID: 1532966610}
+  delayInSeconds: 3
+  WaitForPreviousEventToFinishFirst: 0
+  PreviousEvent: {fileID: 0}
 --- !u!1 &1757375100
 GameObject:
   m_ObjectHideFlags: 0
