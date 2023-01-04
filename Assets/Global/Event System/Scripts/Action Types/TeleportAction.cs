@@ -19,7 +19,7 @@ public class TeleportAction : EventAction
             }
             catch
             {
-                Debug.Log("[Debug]: object " + objectToTeleportByName + " not found");
+                Debug.LogError("[Debug]: object to teleport " + objectToTeleportByName + " not found");
             }
         }
         if (objectToTeleport == null)

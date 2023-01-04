@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RippleSounds : MonoBehaviour
+public class SoundOnParticleCollision: MonoBehaviour
 {
     public AK.Wwise.Event RainDropWwiseEvent;
 
