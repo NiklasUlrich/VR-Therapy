@@ -26,5 +26,6 @@ public class LoadExperienceAction : EventAction
         {
             Debug.Log(obj.Result.Scene.name + " successfully loaded");
         }
+        finished = true;
     }
 }
