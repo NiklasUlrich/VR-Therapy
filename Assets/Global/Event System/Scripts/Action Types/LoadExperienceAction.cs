@@ -11,6 +11,7 @@ public class LoadExperienceAction : EventAction
     [Tooltip("Key for the Experience to be loaded (NOT 'experience')]")]
     public string experienceKey;
 
+    [Tooltip("The loading screen whoch will be used. Leave empty to just load without a loading screen.")]
     public LoadingScreen loadingScreen;
 
     private bool startedLoading = false;

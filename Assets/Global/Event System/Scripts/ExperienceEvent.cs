@@ -6,9 +6,10 @@ public class ExperienceEvent : MonoBehaviour
 {
     //List of the actions the event triggers
     [SerializeField, SerializeReference]
+    [Tooltip("The actions whoch will be triggered when the event triggers.")]
     public List<EventAction> eventActions;
 
-    //the delay with which the eventactions will be started
+    [Tooltip("Delay after which the event will trigger.")]
     public float delayInSeconds;
 
     private bool started = false; //true once all actions are started

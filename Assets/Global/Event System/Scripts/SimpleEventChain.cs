@@ -1,9 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SimpleEventChain : MonoBehaviour
 {
+    [Tooltip("List of events which will be triggered in this order. This overrides the PreviousEvent fields of those events")]
     public List<ChainEvent> events;
     public float initialDelayInSeconds;
 
@@ -16,6 +16,7 @@ public class SimpleEventChain : MonoBehaviour
         startEvent.BeginChain();
     }
 
+    //overrides the previous event fields of the chainevents according to the list
     private void OverRideChainOrder(FirstChainEvent firstEvent)
     {
         events[0].PreviousEvent = firstEvent;

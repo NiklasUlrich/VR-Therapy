@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ChainEvent : ExperienceEvent
 {
-    public bool WaitForPreviousEventToFinishFirst;
+    [Tooltip("The event after which this event will trigger")]
     public ExperienceEvent PreviousEvent;
+    [Tooltip("If checked, the event will only trigger after all actions of the previous event have been finished")]
+    public bool WaitForPreviousEventToFinishFirst;
 
     // Start is called before the first frame update
     void Start()
