@@ -33,5 +33,7 @@ public class TeleportAction : EventAction
         // Set the player's position to the position of the proxy object
         objectToTeleport.transform.SetPositionAndRotation(destination.position, destination.rotation);
 
+        finished = true;
     }
+    
 }

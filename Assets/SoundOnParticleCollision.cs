@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class SoundOnParticleCollision: MonoBehaviour
 {
-    public AK.Wwise.Event RainDropWwiseEvent;
+    public AK.Wwise.Event collisionWwiseEvent;
 
-    public GameObject ChimeSoundPlayer;
+    public GameObject soundPlayer;
+
+    public string particleSystemTag;
 
     ParticleSystem part;
+
     List<ParticleCollisionEvent> collisionEvents;
 
     // Start is called before the first frame update
@@ -25,23 +28,26 @@ public class SoundOnParticleCollision: MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        part = other.GetComponent<ParticleSystem>();
-
-        int numCollisionEvents = part.GetCollisionEvents(gameObject, collisionEvents);
-
-        Debug.Log("DEBUG: getting " + numCollisionEvents + " collision events");
-
-        int i = 0;
-
-        while (i < numCollisionEvents)
+        if(particleSystemTag == null || other.CompareTag(particleSystemTag))
         {
-            Vector3 pos = collisionEvents[i].intersection;
-            ChimeSoundPlayer.transform.position = pos;
+            part = other.GetComponent<ParticleSystem>();
 
-            Debug.Log("DEBUG: Playing sound at " + ChimeSoundPlayer.transform.position);
+            int numCollisionEvents = part.GetCollisionEvents(gameObject, collisionEvents);
 
-            RainDropWwiseEvent.Post(ChimeSoundPlayer);
-            i++;
+            Debug.Log("DEBUG: getting " + numCollisionEvents + " collision events");
+
+            int i = 0;
+
+            while (i < numCollisionEvents)
+            {
+                Vector3 pos = collisionEvents[i].intersection;
+                soundPlayer.transform.position = pos;
+
+                Debug.Log("DEBUG: Playing sound at " + soundPlayer.transform.position);
+
+                collisionWwiseEvent.Post(soundPlayer);
+                i++;
+            }
         }
     }
 }
