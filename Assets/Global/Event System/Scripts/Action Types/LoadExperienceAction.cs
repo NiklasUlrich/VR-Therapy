@@ -12,18 +12,32 @@ public class LoadExperienceAction : EventAction
 
     public LoadingScreen loadingScreen;
 
+    private bool startedLoading = false;
+
+    public void Update()
+    {
+        if (startedLoading)
+        {
+            if (loadingScreen == null || loadingScreen.IsOpaque())
+            {
+                startedLoading = false;
+                LoadScene();
+            }
+        }
+    }
+
     public override void StartAction()
     {
-        LoadScene();
+        if (loadingScreen != null)
+        {
+            loadingScreen.StartLoading();
+        }
+        gameObject.GetComponent<MeshRenderer>().enabled = false;
+        startedLoading = true;
     }
 
     private void LoadScene()
     {
-        if (loadingScreen!=null)
-        {
-            loadingScreen.StartLoading();
-        }
-        
         Addressables.LoadSceneAsync(experienceKey, LoadSceneMode.Single).Completed += SceneLoadComplete;
     }
 

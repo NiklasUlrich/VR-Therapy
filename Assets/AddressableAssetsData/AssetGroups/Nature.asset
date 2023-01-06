@@ -31,6 +31,10 @@ MonoBehaviour:
     m_SerializedLabels:
     - nature
     - experience
+  - m_GUID: 9946c1242928a2e4e81c02161f31f0a6
+    m_Address: Assets/Scenes/Nature
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7182605bdf4880c47a50e519513f028a, type: 2}
   m_SchemaSet:
