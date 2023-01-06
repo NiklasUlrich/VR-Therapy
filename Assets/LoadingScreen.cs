@@ -1,19 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.UI;
 
 public class LoadingScreen : MonoBehaviour
 {
     private Image loadingImage;
-    private bool loading = false;
-    private bool unloading = false;
+
+
     private Color tempColor;
+    private AsyncOperationHandle<SceneInstance> sceneLoadingHandle;
 
     public float loadingFadeSpeed;
     public float unloadingFadeSpeed;
 
-
+    public enum Status {none, preloading, preloaded, loading, unloading}
+    Status status = Status.none;
 
     // Start is called before the first frame update
     void Start()
@@ -25,18 +29,24 @@ public class LoadingScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (loading)
+        if (status == Status.preloading)
         {
             tempColor.a += Time.deltaTime * loadingFadeSpeed;
             loadingImage.color = tempColor;
-            if (IsOpaque())
+            if (tempColor.a >= 1)
             {
-                loading = false;
+                status = Status.preloaded;
             }
             return;
         }
 
-        if(unloading)
+        if (status == Status.loading)
+        {
+            Debug.Log("loading " + sceneLoadingHandle.PercentComplete + "% done");
+            return;
+        }
+
+        if(status == Status.unloading)
         {
             tempColor.a -= Time.deltaTime * unloadingFadeSpeed;
             loadingImage.color = tempColor;
@@ -47,24 +57,24 @@ public class LoadingScreen : MonoBehaviour
         }
     }
 
-    public void StartLoading()
+    public void StartLoading(AsyncOperationHandle<SceneInstance> obj)
     {
-        loading = true;
-        unloading = false;
+        sceneLoadingHandle = obj;
+        status = Status.loading;
+    }
+
+    public void StartPreloading()
+    {
+        status = Status.preloading;
     }
 
     public void Unload()
     {
-        unloading = true;
-        loading = false;
+        status = Status.unloading;
     }
 
-    public bool IsOpaque()
+    public Status GetStatus()
     {
-        if(tempColor.a >= 1)
-        {
-            return true;
-        }
-        return false;
+        return status;
     }
 }

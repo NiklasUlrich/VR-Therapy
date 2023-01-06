@@ -14,11 +14,13 @@ public class LoadExperienceAction : EventAction
 
     private bool startedLoading = false;
 
+    private AsyncOperationHandle<SceneInstance> sceneLoadingHandle;
+
     public void Update()
     {
         if (startedLoading)
         {
-            if (loadingScreen == null || loadingScreen.IsOpaque())
+            if (loadingScreen == null || loadingScreen.GetStatus() == LoadingScreen.Status.preloaded)
             {
                 startedLoading = false;
                 LoadScene();
@@ -30,7 +32,7 @@ public class LoadExperienceAction : EventAction
     {
         if (loadingScreen != null)
         {
-            loadingScreen.StartLoading();
+            loadingScreen.StartPreloading();
         }
         gameObject.GetComponent<MeshRenderer>().enabled = false;
         startedLoading = true;
@@ -38,7 +40,12 @@ public class LoadExperienceAction : EventAction
 
     private void LoadScene()
     {
-        Addressables.LoadSceneAsync(experienceKey, LoadSceneMode.Single).Completed += SceneLoadComplete;
+        sceneLoadingHandle = Addressables.LoadSceneAsync(experienceKey, LoadSceneMode.Single);
+        sceneLoadingHandle.Completed += SceneLoadComplete;
+        if(loadingScreen != null)
+        {
+            loadingScreen.StartLoading(sceneLoadingHandle);
+        }
     }
 
     private void SceneLoadComplete(AsyncOperationHandle<SceneInstance> obj)
