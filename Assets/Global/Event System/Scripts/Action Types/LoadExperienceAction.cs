@@ -10,6 +10,8 @@ public class LoadExperienceAction : EventAction
 {
     public string experienceKey;
 
+    public LoadingScreen loadingScreen;
+
     public override void StartAction()
     {
         LoadScene();
@@ -17,6 +19,11 @@ public class LoadExperienceAction : EventAction
 
     private void LoadScene()
     {
+        if (loadingScreen!=null)
+        {
+            loadingScreen.StartLoading();
+        }
+        
         Addressables.LoadSceneAsync(experienceKey, LoadSceneMode.Single).Completed += SceneLoadComplete;
     }
 
@@ -27,5 +34,12 @@ public class LoadExperienceAction : EventAction
             Debug.Log(obj.Result.Scene.name + " successfully loaded");
         }
         finished = true;
+
+        if (loadingScreen != null)
+        {
+            loadingScreen.Unload();
+        }
+
+        Destroy(gameObject);
     }
 }
