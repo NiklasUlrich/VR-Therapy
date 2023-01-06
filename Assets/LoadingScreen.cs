@@ -17,7 +17,7 @@ public class LoadingScreen : MonoBehaviour
     public float unloadingFadeSpeed;
 
     public enum Status {none, preloading, preloaded, loading, unloading}
-    Status status = Status.none;
+    private Status status = Status.none;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +29,7 @@ public class LoadingScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //fills the view with the loadingscreen while preloading
         if (status == Status.preloading)
         {
             tempColor.a += Time.deltaTime * loadingFadeSpeed;
@@ -40,9 +41,14 @@ public class LoadingScreen : MonoBehaviour
             return;
         }
 
+        //access to the completion of the scene load. not implemented yet.
         if (status == Status.loading)
         {
-            Debug.Log("loading " + sceneLoadingHandle.PercentComplete + "% done");
+            //Debug.Log("loading " + sceneLoadingHandle.PercentComplete + "% done");
+            if (sceneLoadingHandle.Status == AsyncOperationStatus.Succeeded)
+            {
+                status = Status.unloading;
+            }
             return;
         }
 
@@ -66,11 +72,6 @@ public class LoadingScreen : MonoBehaviour
     public void StartPreloading()
     {
         status = Status.preloading;
-    }
-
-    public void Unload()
-    {
-        status = Status.unloading;
     }
 
     public Status GetStatus()
