@@ -20,6 +20,7 @@ public class AudioSpectrum : MonoBehaviour
         if (m_audioSpectrum != null && m_audioSpectrum.Length > 0)
         {
             spectrumValue = m_audioSpectrum[0] * 100;
+            Debug.Log(spectrumValue);
         }
     }
 
