@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SoundOnParticleCollision: MonoBehaviour
 {
-    public AK.Wwise.Event collisionWwiseEvent;
+    //Commented 'til our own integration stands
+
+    //public AK.Wwise.Event collisionWwiseEvent;
 
     public GameObject soundPlayer;
 
@@ -45,7 +47,9 @@ public class SoundOnParticleCollision: MonoBehaviour
 
                 Debug.Log("DEBUG: Playing sound at " + soundPlayer.transform.position);
 
-                collisionWwiseEvent.Post(soundPlayer);
+                //Commented 'til our own integration stands
+
+                //collisionWwiseEvent.Post(soundPlayer);
                 i++;
             }
         }
