@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	3599228714	Play_windchime1_7065			\Environment\Play_windchime1_7065	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	296595209	windchime_play	C:\Users\Niklas Ulrich\Documents\GitHub\VRTherapy\VR-Therapy\VR-Therapy_WwiseProject\.cache\Android\SFX\windchime1-7065_D79FB2B7.wem		\Interactive Music Hierarchy\Environment\windchime1-7065\windchime_play		2304096
-
