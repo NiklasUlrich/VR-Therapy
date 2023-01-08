@@ -22,6 +22,7 @@ public class LoadExperienceAction : EventAction
     //kicks off the scene loading by loading the loading screen, so the player does not see the loading
     public override void StartAction()
     {
+        DontDestroyOnLoad(transform.parent.gameObject);
         if (loadingScreen != null)
         {
             loadingScreen.StartPreloading();
