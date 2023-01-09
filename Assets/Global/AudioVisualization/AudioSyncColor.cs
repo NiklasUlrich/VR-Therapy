@@ -30,7 +30,7 @@ public class AudioSyncColor : AudioSyncer
 
 		//if (spike) return;
 
-		material.color = Color.Lerp(restColor, beatColor, audioValue * 10/*restSmoothTime * Time.deltaTime*/);
+		material.color = Color.Lerp(restColor, beatColor, audioValue * 30/*restSmoothTime * Time.deltaTime*/);
 	}
 
 	public override void Spike()
