@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundOnParticleCollision: MonoBehaviour
+public class ParticleSystemCollisionEvent: ExperienceEvent
 {
     //Commented 'til our own integration stands
 
-    public AudioSource collisionSound;
-
-    public GameObject soundPlayer;
+    public GameObject collisionMarker;
 
     public string particleSystemTag;
 
@@ -22,15 +20,9 @@ public class SoundOnParticleCollision: MonoBehaviour
         collisionEvents = new List<ParticleCollisionEvent>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void OnParticleCollision(GameObject other)
     {
-        if(particleSystemTag == null || other.CompareTag(particleSystemTag))
+        if(particleSystemTag == null || particleSystemTag == null || other.CompareTag(particleSystemTag))
         {
             part = other.GetComponent<ParticleSystem>();
 
@@ -43,11 +35,15 @@ public class SoundOnParticleCollision: MonoBehaviour
             while (i < numCollisionEvents)
             {
                 Vector3 pos = collisionEvents[i].intersection;
-                soundPlayer.transform.position = pos;
+                if (collisionMarker != null)
+                {
+                    collisionMarker.transform.position = pos;
+                }
 
-                collisionSound.Play();
                 i++;
             }
+
+            StartEvent();
         }
     }
 }
