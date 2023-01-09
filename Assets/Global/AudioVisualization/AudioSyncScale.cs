@@ -13,7 +13,7 @@ public class AudioSyncScale : AudioSyncer
 
 		while (_curr != _target)
 		{
-			_curr = Vector3.Lerp(_initial, _target, _timer / timeToBeat);
+			//_curr = Vector3.Lerp(_initial, _target, _timer / timeToBeat);
 			_timer += Time.deltaTime;
 
 			transform.localScale = _curr;
@@ -21,25 +21,25 @@ public class AudioSyncScale : AudioSyncer
 			yield return null;
 		}
 
-		m_isBeat = false;
+		//m_isBeat = false;
 	}
 
 	public override void OnUpdate()
 	{
 		base.OnUpdate();
 
-		if (m_isBeat) return;
+		//if (m_isBeat) return;
 
 		transform.localScale = Vector3.Lerp(transform.localScale, restScale, restSmoothTime * Time.deltaTime);
 	}
 
-	public override void OnBeat()
+	/*public override void OnBeat()
 	{
 		base.OnBeat();
 
 		StopCoroutine("MoveToScale");
 		StartCoroutine("MoveToScale", beatScale);
-	}
+	}*/
 
 	public Vector3 beatScale;
 	public Vector3 restScale;

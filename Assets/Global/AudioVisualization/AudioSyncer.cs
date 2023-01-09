@@ -10,14 +10,12 @@ public class AudioSyncer : MonoBehaviour
 {
 
 	/// <summary>
-	/// Inherit this to cause some behavior on each beat
+	/// Inherit this to cause some behavior on each sound spike
 	/// </summary>
-	public virtual void OnBeat()
-	{
-		Debug.Log("beat");
-		m_timer = 0;
-		m_isBeat = true;
-	}
+	public virtual void Spike()
+    {
+		spike = true;
+    }
 
 	/// <summary>
 	/// Inherit this to do whatever you want in Unity's update function
@@ -26,29 +24,21 @@ public class AudioSyncer : MonoBehaviour
 	/// </summary>
 	public virtual void OnUpdate()
 	{
+		Debug.Log("Spike is " + spike);
 		// update audio value
-		m_previousAudioValue = m_audioValue;
-		m_audioValue = AudioSpectrum.spectrumValue;
+		m_previousAudioValue = audioValue;
 
-		// if audio value went below the bias during this frame
-		if (m_previousAudioValue > bias &&
-			m_audioValue <= bias)
-		{
-			// if minimum beat interval is reached
-			if (m_timer > timeStep)
-				OnBeat();
+		if(AudioSpectrum.spectrumValue >= bias)
+        {
+			audioValue = AudioSpectrum.spectrumValue;
+			
+			if(audioValue >= m_previousAudioValue)
+            {
+				Spike();
+				return;
+            }
 		}
-
-		// if audio value went above the bias during this frame
-		if (m_previousAudioValue <= bias &&
-			m_audioValue > bias)
-		{
-			// if minimum beat interval is reached
-			if (m_timer > timeStep)
-				OnBeat();
-		}
-
-		m_timer += Time.deltaTime;
+		spike = false;
 	}
 
 	private void Update()
@@ -58,12 +48,11 @@ public class AudioSyncer : MonoBehaviour
 
 	public float bias;
 	public float timeStep;
-	public float timeToBeat;
 	public float restSmoothTime;
 
-	private float m_previousAudioValue;
-	private float m_audioValue;
-	private float m_timer;
+	protected float audioValue = 0;
+	protected bool spike = false;
 
-	protected bool m_isBeat;
+	private float m_previousAudioValue;
+	private float m_timer;
 }

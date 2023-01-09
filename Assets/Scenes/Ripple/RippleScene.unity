@@ -5091,12 +5091,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98f06aae7e88d504abb7fceda5f29c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bias: 0.001
+  bias: 0
   timeStep: 1
-  timeToBeat: 0.15
   restSmoothTime: 5
-  beatColors:
-  - {r: 0.6913581, g: 0, b: 1, a: 0}
+  beatColor: {r: 1, g: 0.5801887, b: 0.9983537, a: 0}
   restColor: {r: 0.253267, g: 0, b: 0.2924528, a: 0}
 --- !u!222 &571651057
 CanvasRenderer:

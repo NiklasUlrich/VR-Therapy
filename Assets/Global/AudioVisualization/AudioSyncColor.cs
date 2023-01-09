@@ -15,41 +15,32 @@ public class AudioSyncColor : AudioSyncer
 
 		while (_curr != _target)
 		{
-			_curr = Color.Lerp(_initial, _target, _timer / timeToBeat);
+			_curr = Color.Lerp(_initial, _target, audioValue);
 			_timer += Time.deltaTime;
 
 			material.color = _curr;
 
 			yield return null;
 		}
-
-		m_isBeat = false;
-	}
-
-	private Color RandomColor()
-	{
-		if (beatColors == null || beatColors.Length == 0) return Color.white;
-		m_randomIndx = Random.Range(0, beatColors.Length);
-		return beatColors[m_randomIndx];
 	}
 
 	public override void OnUpdate()
 	{
 		base.OnUpdate();
 
-		if (m_isBeat) return;
+		//if (spike) return;
 
-		material.color = Color.Lerp(material.color, restColor, restSmoothTime * Time.deltaTime);
+		material.color = Color.Lerp(restColor, beatColor, audioValue * 10/*restSmoothTime * Time.deltaTime*/);
 	}
 
-	public override void OnBeat()
+	public override void Spike()
 	{
-		base.OnBeat();
+		/*base.Spike();
 
 		Color _c = RandomColor();
 
 		StopCoroutine("MoveToColor");
-		StartCoroutine("MoveToColor", _c);
+		StartCoroutine("MoveToColor", _c);*/
 	}
 
 	private void Start()
@@ -57,7 +48,7 @@ public class AudioSyncColor : AudioSyncer
 		material = GetComponent<Renderer>().material;
 	}
 
-	public Color[] beatColors;
+	public Color beatColor;
 	public Color restColor;
 
 	private Material material;
