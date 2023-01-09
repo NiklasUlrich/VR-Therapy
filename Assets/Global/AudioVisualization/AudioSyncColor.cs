@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Image))]
+[RequireComponent(typeof(Material))]
 public class AudioSyncColor : AudioSyncer
 {
 
 	private IEnumerator MoveToColor(Color _target)
 	{
-		Color _curr = m_img.color;
+		Color _curr = material.color;
 		Color _initial = _curr;
 		float _timer = 0;
 
@@ -18,7 +18,7 @@ public class AudioSyncColor : AudioSyncer
 			_curr = Color.Lerp(_initial, _target, _timer / timeToBeat);
 			_timer += Time.deltaTime;
 
-			m_img.color = _curr;
+			material.color = _curr;
 
 			yield return null;
 		}
@@ -39,7 +39,7 @@ public class AudioSyncColor : AudioSyncer
 
 		if (m_isBeat) return;
 
-		m_img.color = Color.Lerp(m_img.color, restColor, restSmoothTime * Time.deltaTime);
+		material.color = Color.Lerp(material.color, restColor, restSmoothTime * Time.deltaTime);
 	}
 
 	public override void OnBeat()
@@ -54,12 +54,13 @@ public class AudioSyncColor : AudioSyncer
 
 	private void Start()
 	{
-		m_img = GetComponent<Image>();
+		material = GetComponent<Renderer>().material;
 	}
 
 	public Color[] beatColors;
 	public Color restColor;
 
+	private Material material;
+
 	private int m_randomIndx;
-	private Image m_img;
 }
