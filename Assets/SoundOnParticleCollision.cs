@@ -6,7 +6,7 @@ public class SoundOnParticleCollision: MonoBehaviour
 {
     //Commented 'til our own integration stands
 
-    //public AK.Wwise.Event collisionWwiseEvent;
+    public AudioSource collisionSound;
 
     public GameObject soundPlayer;
 
@@ -36,7 +36,7 @@ public class SoundOnParticleCollision: MonoBehaviour
 
             int numCollisionEvents = part.GetCollisionEvents(gameObject, collisionEvents);
 
-            Debug.Log("DEBUG: getting " + numCollisionEvents + " collision events");
+            //Debug.Log("DEBUG: getting " + numCollisionEvents + " collision events");
 
             int i = 0;
 
@@ -45,11 +45,7 @@ public class SoundOnParticleCollision: MonoBehaviour
                 Vector3 pos = collisionEvents[i].intersection;
                 soundPlayer.transform.position = pos;
 
-                Debug.Log("DEBUG: Playing sound at " + soundPlayer.transform.position);
-
-                //Commented 'til our own integration stands
-
-                //collisionWwiseEvent.Post(soundPlayer);
+                collisionSound.Play();
                 i++;
             }
         }
