@@ -6,16 +6,8 @@ using UnityEngine;
 /// Parent class responsible for extracting beats from..
 /// ..spectrum value given by AudioSpectrum.cs
 /// </summary>
-public class AudioSyncer : MonoBehaviour
+public abstract class AudioSyncer : MonoBehaviour
 {
-
-	/// <summary>
-	/// Inherit this to cause some behavior on each sound spike
-	/// </summary>
-	public virtual void Spike()
-    {
-		spike = true;
-    }
 
 	/// <summary>
 	/// Inherit this to do whatever you want in Unity's update function
@@ -24,21 +16,27 @@ public class AudioSyncer : MonoBehaviour
 	/// </summary>
 	public virtual void OnUpdate()
 	{
-		Debug.Log("Spike is " + spike);
 		// update audio value
-		m_previousAudioValue = audioValue;
+		previousAudioValue = audioValue;
+		previousAudioValue = Mathf.Lerp(previousAudioValue, 0, timer / restSmoothTime);
 
-		if(AudioSpectrum.spectrumValue >= bias)
+		float spectrumValue = 0;
+		if (AudioSpectrum.audioSpectrum != null && AudioSpectrum.audioSpectrum.Length >= 0 && AudioSpectrum.audioSpectrum.Length > frequency)
         {
-			audioValue = AudioSpectrum.spectrumValue;
-			
-			if(audioValue >= m_previousAudioValue)
-            {
-				Spike();
-				return;
-            }
+			spectrumValue = AudioSpectrum.audioSpectrum[frequency];
+			Debug.Log("spectrum value: " + spectrumValue);
 		}
-		spike = false;
+
+		if (spectrumValue >= bias && spectrumValue > previousAudioValue)
+        {
+			audioValue = Mathf.Lerp(previousAudioValue, spectrumValue, lerpFactor);
+			timer = 0;
+		}
+        else
+        {
+			audioValue = previousAudioValue;
+		}
+		timer += Time.deltaTime;
 	}
 
 	private void Update()
@@ -46,13 +44,14 @@ public class AudioSyncer : MonoBehaviour
 		OnUpdate();
 	}
 
+    public int frequency;
+	public float sensitivity;
 	public float bias;
-	public float timeStep;
 	public float restSmoothTime;
+	public float lerpFactor;
 
 	protected float audioValue = 0;
-	protected bool spike = false;
 
-	private float m_previousAudioValue;
-	private float m_timer;
+	private float previousAudioValue;
+	private float timer = 0;
 }
