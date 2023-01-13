@@ -24,7 +24,7 @@ public abstract class AudioSyncer : MonoBehaviour
 		if (AudioSpectrum.audioSpectrum != null && AudioSpectrum.audioSpectrum.Length >= 0 && AudioSpectrum.audioSpectrum.Length > frequency)
         {
 			spectrumValue = AudioSpectrum.audioSpectrum[frequency];
-			Debug.Log("spectrum value: " + spectrumValue);
+			//Debug.Log("spectrum value: " + spectrumValue);
 		}
 
 		if (spectrumValue >= bias && spectrumValue > previousAudioValue)
