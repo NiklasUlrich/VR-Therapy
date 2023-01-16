@@ -116,15 +116,15 @@ Material:
     m_Floats:
     - LOD_FADE_CROSSFADE1: 0
     - LOD_FADE_CROSSFADE2: 0
-    - _AlphaCutoff: 0.451
+    - _AlphaCutoff: 0.137
     - _BumpScale: 1
     - _COLOR2: 1
     - _Color2: 0
     - _Color2Enable: 1
-    - _Color2Fade: -0.18
+    - _Color2Fade: -0.12
     - _Color2Int: 0.15
     - _Color2Intensity: 0.1
-    - _Color2Level: -8.94
+    - _Color2Level: -11.04
     - _Color2OverlayType: 0
     - _Color2Power: 0.975
     - _Color2__________: 0
