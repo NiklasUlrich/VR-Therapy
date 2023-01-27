@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{44FB9215-57F6-F3B0-E9E2-E1CD08783251}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSample", "ControllerSample.csproj", "{C62F5CAE-5185-BF31-362A-BF03D1629F1C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.XR.Interaction.Toolkit.Samples.StarterAssets", "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj", "{04A0F6DE-32BF-4D3D-8F24-09C40D37B735}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSample", "ControllerSample.csproj", "{C62F5CAE-5185-BF31-362A-BF03D1629F1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,14 +17,14 @@ Global
 		{44FB9215-57F6-F3B0-E9E2-E1CD08783251}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44FB9215-57F6-F3B0-E9E2-E1CD08783251}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44FB9215-57F6-F3B0-E9E2-E1CD08783251}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C62F5CAE-5185-BF31-362A-BF03D1629F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C62F5CAE-5185-BF31-362A-BF03D1629F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C62F5CAE-5185-BF31-362A-BF03D1629F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C62F5CAE-5185-BF31-362A-BF03D1629F1C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{04A0F6DE-32BF-4D3D-8F24-09C40D37B735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{04A0F6DE-32BF-4D3D-8F24-09C40D37B735}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04A0F6DE-32BF-4D3D-8F24-09C40D37B735}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04A0F6DE-32BF-4D3D-8F24-09C40D37B735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62F5CAE-5185-BF31-362A-BF03D1629F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62F5CAE-5185-BF31-362A-BF03D1629F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62F5CAE-5185-BF31-362A-BF03D1629F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62F5CAE-5185-BF31-362A-BF03D1629F1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
