@@ -1992,11 +1992,11 @@ GameObject:
   - component: {fileID: 1532142976}
   - component: {fileID: 1532142975}
   - component: {fileID: 1532142974}
-  - component: {fileID: 1532142979}
+  - component: {fileID: 1532142982}
   - component: {fileID: 1532142978}
+  - component: {fileID: 1532142979}
   - component: {fileID: 1532142981}
   - component: {fileID: 1532142980}
-  - component: {fileID: 1532142982}
   m_Layer: 0
   m_Name: LoadingSphere_Ripple
   m_TagString: Untagged
@@ -2296,7 +2296,7 @@ PrefabInstance:
     - target: {fileID: 2604469833093187540, guid: 72e3b8a1b14173241b000545b37a822e,
         type: 3}
       propertyPath: m_PlaneDistance
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7032769686065755403, guid: 72e3b8a1b14173241b000545b37a822e,
         type: 3}
@@ -2453,7 +2453,7 @@ PrefabInstance:
     - target: {fileID: 2604469833093187540, guid: be05112b310bdb8468b48db44860a033,
         type: 3}
       propertyPath: m_PlaneDistance
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7032769686065755403, guid: be05112b310bdb8468b48db44860a033,
         type: 3}
