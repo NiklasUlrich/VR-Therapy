@@ -161,7 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 80
   highestFrequency: 90
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 80
   highestFrequency: 90
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 10
   highestFrequency: 20
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -334,7 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 10
   highestFrequency: 20
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -467,7 +467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 30
   highestFrequency: 40
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -487,7 +487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 30
   highestFrequency: 40
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -620,7 +620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 0
   highestFrequency: 10
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 0
   highestFrequency: 10
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -836,7 +836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 50
   highestFrequency: 60
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -884,7 +884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 50
   highestFrequency: 60
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -926,7 +926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 20
   highestFrequency: 30
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -946,7 +946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 20
   highestFrequency: 30
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -1190,7 +1190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 60
   highestFrequency: 70
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -1210,7 +1210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 60
   highestFrequency: 70
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 110
   highestFrequency: 120
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -1363,7 +1363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 110
   highestFrequency: 120
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -1690,7 +1690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 70
   highestFrequency: 80
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -1710,7 +1710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 70
   highestFrequency: 80
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -1843,7 +1843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 90
   highestFrequency: 100
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -1863,7 +1863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 90
   highestFrequency: 100
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -1996,7 +1996,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 100
   highestFrequency: 110
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -2016,7 +2016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 100
   highestFrequency: 110
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -2149,7 +2149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 40
   highestFrequency: 50
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8
@@ -2169,7 +2169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 40
   highestFrequency: 50
-  sensitivity: 30000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
   lerpFactor: 0.8

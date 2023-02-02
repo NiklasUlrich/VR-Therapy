@@ -19,12 +19,15 @@ public abstract class AudioSyncer : MonoBehaviour
 	public float restSmoothTime;
 	public float lerpFactor;
 
+	public float smoothingInterval;
+
 	protected float audioValue = 0;
 
 	private bool frequencyValuesAcceptable = true;
 
 	private float previousAudioValue;
 	private float timer = 0;
+	private float intervalTimer = 0;
 
 	protected virtual void Start()
     {
@@ -55,6 +58,11 @@ public abstract class AudioSyncer : MonoBehaviour
 	{
 		if (!frequencyValuesAcceptable) return;
 		// update audio value
+		if(intervalTimer >= smoothingInterval)
+        {
+
+        }
+
 		previousAudioValue = audioValue;
 		previousAudioValue = Mathf.Lerp(previousAudioValue, 0, timer / restSmoothTime);
 
@@ -75,13 +83,15 @@ public abstract class AudioSyncer : MonoBehaviour
 
 		if (spectrumValue >= bias && spectrumValue > previousAudioValue)
         {
-			audioValue = Mathf.Lerp(previousAudioValue, spectrumValue, lerpFactor);
+			audioValue = spectrumValue;
 			timer = 0;
 		}
         else
         {
 			audioValue = previousAudioValue;
 		}
+
+		intervalTimer += Time.deltaTime;
 		timer += Time.deltaTime;
 	}
 
