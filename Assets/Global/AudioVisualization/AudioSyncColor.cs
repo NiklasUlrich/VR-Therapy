@@ -11,13 +11,13 @@ public class AudioSyncColor : AudioSyncer
 	{
 		base.OnUpdate();
 
-		//if (spike) return;
 
 		material.color = Color.Lerp(restColor, beatColor, audioValue * sensitivity);
 	}
 
-	private void Start()
+	protected override void Start()
 	{
+		base.Start();
 		material = GetComponent<Renderer>().material;
 	}
 
