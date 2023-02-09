@@ -27,6 +27,14 @@ MonoBehaviour:
     m_Address: Assets/Scenes/Nature/Materials
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: cc7e744507d633446a7eef6a8e6c721a
+    m_Address: Assets/Scenes/Nature/Prefabs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f0eeecc76e566704383eaaa444762105
+    m_Address: Assets/Scenes/Nature/Prefabs/LoadingSphere_Nature.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7182605bdf4880c47a50e519513f028a, type: 2}
   m_SchemaSet:
