@@ -116,15 +116,15 @@ Material:
     m_Floats:
     - LOD_FADE_CROSSFADE1: 0
     - LOD_FADE_CROSSFADE2: 0
-    - _AlphaCutoff: 0.451
+    - _AlphaCutoff: 0.149
     - _BumpScale: 1
     - _COLOR2: 1
     - _Color2: 0
     - _Color2Enable: 1
-    - _Color2Fade: -0.18
+    - _Color2Fade: -0.08
     - _Color2Int: 0.15
     - _Color2Intensity: 0.1
-    - _Color2Level: -8.94
+    - _Color2Level: -11.02
     - _Color2OverlayType: 0
     - _Color2Power: 0.975
     - _Color2__________: 0
@@ -151,7 +151,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _Snow: 0
     - _SnowAmount: 0.3
-    - _SnowFade: 0.1
+    - _SnowFade: 0.203
     - _SnowLevel: 0.5
     - _SnowOverlayType: 0
     - _SnowTiling: 0.15
@@ -170,8 +170,8 @@ Material:
     - _UVSec: 0
     - _WIND: 1
     - _Wind: 1
-    - _WindForce: 0.104
-    - _WindSpeed: 0.394
+    - _WindForce: 0.22
+    - _WindSpeed: 0.175
     - _WindWavesScale: 0.25
     - _Wind__________: 1
     - _ZWrite: 1

@@ -20,19 +20,19 @@ MonoBehaviour:
   - m_GUID: 1b7183ccc3762de4291c904092362fd8
     m_Address: Assets/Scenes/Nature/Nature.unity
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - experience
-    - nature
+    m_SerializedLabels: []
   - m_GUID: c5349b943bd13094e9a12015e35937fc
     m_Address: Assets/Scenes/Nature/Materials
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: cc7e744507d633446a7eef6a8e6c721a
-    m_Address: Assets/Scenes/Nature/Prefabs
+  - m_GUID: 6f619bdb5602b5742b763e73838a7439
+    m_Address: Assets/Scenes/Nature/AN_Demo.unity
     m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: f0eeecc76e566704383eaaa444762105
-    m_Address: Assets/Scenes/Nature/Prefabs/LoadingSphere_Nature.prefab
+    m_SerializedLabels:
+    - nature
+    - experience
+  - m_GUID: 9946c1242928a2e4e81c02161f31f0a6
+    m_Address: Assets/Scenes/Nature
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0
