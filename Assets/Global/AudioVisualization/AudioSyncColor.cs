@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class AudioSyncColor : AudioSyncer
 {
 
-	protected override void OnUpdate()
+	public override void OnUpdate()
 	{
 		base.OnUpdate();
 

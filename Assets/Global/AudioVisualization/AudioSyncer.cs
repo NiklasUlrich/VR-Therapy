@@ -58,7 +58,7 @@ public abstract class AudioSyncer : MonoBehaviour
 	/// Typically, this is used to arrive at some rest state..
 	/// ..defined by the child class
 	/// </summary>
-	protected virtual void OnUpdate()
+	private void OnUpdate()
 	{
 		if (!frequencyValuesAcceptable) return;
 
