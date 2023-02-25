@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class AudioSyncScale : AudioSyncer
 {
-	protected override void OnUpdate()
+	public override void OnUpdate()
 	{
-		base.Update();
+		base.OnUpdate();
 
 		transform.localScale = Vector3.Lerp(restScale, beatScale, audioValue * sensitivity);
 	}

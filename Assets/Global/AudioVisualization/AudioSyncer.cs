@@ -16,21 +16,17 @@ public abstract class AudioSyncer : MonoBehaviour
 
 	public float sensitivity;
 	public float bias;
+	public float restSmoothTime;
+	public float lerpFactor;
 
-	public float smoothTime;
-
-	public bool alsoSmoothRise;
+	public float smoothingInterval;
 
 	protected float audioValue = 0;
 
 	private bool frequencyValuesAcceptable = true;
 
-	private float spectrumValueSum = 0;
-	private int spectrumValueCount = 0;
-	private float smoothLerpTarget = 0;
-	private float smoothLerpStart = 0;
-
-	private float restTimer = 0;
+	private float previousAudioValue;
+	private float timer = 0;
 	private float intervalTimer = 0;
 
 	protected virtual void Start()
@@ -58,14 +54,21 @@ public abstract class AudioSyncer : MonoBehaviour
 	/// Typically, this is used to arrive at some rest state..
 	/// ..defined by the child class
 	/// </summary>
-	private void OnUpdate()
+	public virtual void OnUpdate()
 	{
 		if (!frequencyValuesAcceptable) return;
+		// update audio value
+		if(intervalTimer >= smoothingInterval)
+        {
+
+        }
+
+		previousAudioValue = audioValue;
+		previousAudioValue = Mathf.Lerp(previousAudioValue, 0, timer / restSmoothTime);
 
 		float spectrumValue = 0;
 		float[] audioSpectrum = AudioSpectrum.audioSpectrum;
 
-		//calculate average audiovalue from selected frequencies
 		if (audioSpectrum != null && audioSpectrum.Length >= 0)
         {
 			for(int i = lowestFrequency; i <= highestFrequency; i++)
@@ -78,50 +81,23 @@ public abstract class AudioSyncer : MonoBehaviour
 			//Debug.Log("spectrum value: " + spectrumValue);
 		}
 
-        if (!alsoSmoothRise)
+		if (spectrumValue >= bias && spectrumValue > previousAudioValue)
         {
-			immediateSyncing(spectrumValue);
-			return;
-        }
-		smoothSyncing(spectrumValue);
-	}
-
-	private void smoothSyncing(float spectrumValue)
-    {
-		if(intervalTimer >= smoothTime)
-        {
-			smoothLerpStart = audioValue;
-			smoothLerpTarget = spectrumValueSum / spectrumValueCount;
-			spectrumValueCount = 0;
-			spectrumValueSum = 0;
-			intervalTimer = 0;
+			audioValue = spectrumValue;
+			timer = 0;
 		}
         else
         {
-			spectrumValueSum += spectrumValue;
-			spectrumValueCount++;
-        }
-		audioValue = Mathf.Lerp(smoothLerpStart, smoothLerpTarget, intervalTimer / smoothTime);
+			audioValue = previousAudioValue;
+		}
+
 		intervalTimer += Time.deltaTime;
+		timer += Time.deltaTime;
 	}
 
-	private void immediateSyncing(float spectrumValue)
-    {
-		if (spectrumValue >= bias && spectrumValue > audioValue)
-		{
-			audioValue = spectrumValue;
-			restTimer = 0;
-		}
-		else
-		{
-			audioValue = Mathf.Lerp(audioValue, 0, restTimer / smoothTime);
-		}
-		restTimer += Time.deltaTime;
-	}
-
-	protected virtual void Update()
+	private void Update()
 	{
-		OnUpdate();	
+		OnUpdate();
 	}
 
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.01994523, g: 0.0018412672, b: 0.025923897, a: 1}
+  m_IndirectSpecularColor: {r: 0.019945236, g: 0.0018412719, b: 0.025923926, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -161,11 +161,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 80
   highestFrequency: 90
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatScale: {x: 2, y: 2, z: 2}
   restScale: {x: 1, y: 1, z: 1}
 --- !u!114 &278785782
@@ -182,11 +181,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 80
   highestFrequency: 90
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatColor: {r: 1, g: 0.5801887, b: 0.9983537, a: 0}
   restColor: {r: 0.253267, g: 0, b: 0.2924528, a: 0}
 --- !u!222 &278785783
@@ -316,11 +314,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 10
   highestFrequency: 20
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatScale: {x: 2, y: 2, z: 2}
   restScale: {x: 1, y: 1, z: 1}
 --- !u!114 &423005189
@@ -337,11 +334,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 10
   highestFrequency: 20
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatColor: {r: 1, g: 0.5801887, b: 0.9983537, a: 0}
   restColor: {r: 0.253267, g: 0, b: 0.2924528, a: 0}
 --- !u!222 &423005190
@@ -471,11 +467,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 30
   highestFrequency: 40
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatScale: {x: 2, y: 2, z: 2}
   restScale: {x: 1, y: 1, z: 1}
 --- !u!114 &461596996
@@ -492,11 +487,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 30
   highestFrequency: 40
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatColor: {r: 1, g: 0.5801887, b: 0.9983537, a: 0}
   restColor: {r: 0.253267, g: 0, b: 0.2924528, a: 0}
 --- !u!222 &461596997
@@ -626,11 +620,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 0
   highestFrequency: 10
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatScale: {x: 2, y: 2, z: 2}
   restScale: {x: 1, y: 1, z: 1}
 --- !u!114 &554194339
@@ -647,11 +640,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 0
   highestFrequency: 10
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatColor: {r: 1, g: 0.5801887, b: 0.9983537, a: 0}
   restColor: {r: 0.253267, g: 0, b: 0.2924528, a: 0}
 --- !u!222 &554194340
@@ -844,11 +836,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 50
   highestFrequency: 60
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatColor: {r: 1, g: 0.5801887, b: 0.9983537, a: 0}
   restColor: {r: 0.253267, g: 0, b: 0.2924528, a: 0}
 --- !u!222 &571651057
@@ -893,11 +884,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 50
   highestFrequency: 60
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatScale: {x: 2, y: 2, z: 2}
   restScale: {x: 1, y: 1, z: 1}
 --- !u!1 &684517496
@@ -936,11 +926,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 20
   highestFrequency: 30
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatScale: {x: 2, y: 2, z: 2}
   restScale: {x: 1, y: 1, z: 1}
 --- !u!114 &684517498
@@ -957,11 +946,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 20
   highestFrequency: 30
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatColor: {r: 1, g: 0.5801887, b: 0.9983537, a: 0}
   restColor: {r: 0.253267, g: 0, b: 0.2924528, a: 0}
 --- !u!222 &684517499
@@ -1202,11 +1190,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 60
   highestFrequency: 70
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatScale: {x: 2, y: 2, z: 2}
   restScale: {x: 1, y: 1, z: 1}
 --- !u!114 &970432964
@@ -1223,11 +1210,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 60
   highestFrequency: 70
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatColor: {r: 1, g: 0.5801887, b: 0.9983537, a: 0}
   restColor: {r: 0.253267, g: 0, b: 0.2924528, a: 0}
 --- !u!222 &970432965
@@ -1357,11 +1343,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 110
   highestFrequency: 120
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatScale: {x: 2, y: 2, z: 2}
   restScale: {x: 1, y: 1, z: 1}
 --- !u!114 &1145029085
@@ -1378,11 +1363,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 110
   highestFrequency: 120
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatColor: {r: 1, g: 0.5801887, b: 0.9983537, a: 0}
   restColor: {r: 0.253267, g: 0, b: 0.2924528, a: 0}
 --- !u!222 &1145029086
@@ -1706,11 +1690,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 70
   highestFrequency: 80
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatScale: {x: 2, y: 2, z: 2}
   restScale: {x: 1, y: 1, z: 1}
 --- !u!114 &1566016877
@@ -1727,11 +1710,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 70
   highestFrequency: 80
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatColor: {r: 1, g: 0.5801887, b: 0.9983537, a: 0}
   restColor: {r: 0.253267, g: 0, b: 0.2924528, a: 0}
 --- !u!222 &1566016878
@@ -1861,11 +1843,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 90
   highestFrequency: 100
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatScale: {x: 2, y: 2, z: 2}
   restScale: {x: 1, y: 1, z: 1}
 --- !u!114 &1587407562
@@ -1882,11 +1863,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 90
   highestFrequency: 100
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatColor: {r: 1, g: 0.5801887, b: 0.9983537, a: 0}
   restColor: {r: 0.253267, g: 0, b: 0.2924528, a: 0}
 --- !u!222 &1587407563
@@ -2016,11 +1996,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 100
   highestFrequency: 110
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatScale: {x: 2, y: 2, z: 2}
   restScale: {x: 1, y: 1, z: 1}
 --- !u!114 &2039045814
@@ -2037,11 +2016,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 100
   highestFrequency: 110
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.01
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatColor: {r: 1, g: 0.5801887, b: 0.9983537, a: 0}
   restColor: {r: 0.253267, g: 0, b: 0.2924528, a: 0}
 --- !u!222 &2039045815
@@ -2171,11 +2149,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 40
   highestFrequency: 50
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.000001
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatScale: {x: 2, y: 2, z: 2}
   restScale: {x: 1, y: 1, z: 1}
 --- !u!114 &2054191067
@@ -2192,11 +2169,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestFrequency: 40
   highestFrequency: 50
-  sensitivity: 3000
+  sensitivity: 5000
   bias: 0
   restSmoothTime: 100
-  lerpFactor: 0.000001
-  smoothingInterval: 0
+  lerpFactor: 0.8
   beatColor: {r: 1, g: 0.5801887, b: 0.9983537, a: 0}
   restColor: {r: 0.253267, g: 0, b: 0.2924528, a: 0}
 --- !u!222 &2054191068
