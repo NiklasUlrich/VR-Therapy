@@ -6,7 +6,7 @@ public class ExperienceEvent : MonoBehaviour
 {
     //List of the actions the event triggers
     [SerializeField, SerializeReference]
-    [Tooltip("The actions whoch will be triggered when the event triggers.")]
+    [Tooltip("The actions which will be triggered when the event triggers.")]
     public List<EventAction> eventActions;
 
     [Tooltip("Delay after which the event will trigger.")]
