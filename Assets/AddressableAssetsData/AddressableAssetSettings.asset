@@ -92,6 +92,7 @@ MonoBehaviour:
     - ripple
     - nature
     - base
+    - nature2
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: caa2a152241298e4a9469e7377d8df94, type: 2}

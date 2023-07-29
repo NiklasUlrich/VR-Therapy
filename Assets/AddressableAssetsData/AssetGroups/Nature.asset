@@ -35,6 +35,12 @@ MonoBehaviour:
     m_Address: Assets/Scenes/Nature
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: d8cfc087e38d4d04894028c210e4b877
+    m_Address: Assets/Scenes/Nature/Nature Glade.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - experience
+    - nature2
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7182605bdf4880c47a50e519513f028a, type: 2}
   m_SchemaSet:
