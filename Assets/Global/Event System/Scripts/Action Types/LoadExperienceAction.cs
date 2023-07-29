@@ -14,6 +14,8 @@ public class LoadExperienceAction : EventAction
     [Tooltip("The loading screen whoch will be used. Leave empty to just load without a loading screen.")]
     public LoadingScreen loadingScreen;
 
+    public Color loadingScreenColor;
+
     private bool startedLoading = false;
 
     private AsyncOperationHandle<SceneInstance> sceneLoadingHandle;
@@ -25,7 +27,7 @@ public class LoadExperienceAction : EventAction
         DontDestroyOnLoad(gameObject);
         if (loadingScreen != null)
         {
-            loadingScreen.StartPreloading();
+            loadingScreen.StartPreloading(loadingScreenColor);
         }
         gameObject.GetComponent<MeshRenderer>().enabled = false;
         startedLoading = true;

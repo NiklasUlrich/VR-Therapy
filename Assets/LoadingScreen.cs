@@ -7,11 +7,10 @@ using UnityEngine.UI;
 
 public class LoadingScreen : MonoBehaviour
 {
-    private Image loadingImage;
-
-
     private Color tempColor;
     private AsyncOperationHandle<SceneInstance> sceneLoadingHandle;
+
+    private Material material;
 
     public float loadingFadeSpeed;
     public float unloadingFadeSpeed;
@@ -22,8 +21,8 @@ public class LoadingScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        loadingImage = gameObject.GetComponentInChildren<Image>();
-        tempColor = loadingImage.color;
+        material = GetComponent<Renderer>().material;
+        tempColor = material.color;
     }
 
     // Update is called once per frame
@@ -32,8 +31,9 @@ public class LoadingScreen : MonoBehaviour
         //fills the view with the loadingscreen while preloading
         if (status == Status.preloading)
         {
+            Debug.Log("DEBUG: loading screen " + tempColor.a);
             tempColor.a += Time.deltaTime * loadingFadeSpeed;
-            loadingImage.color = tempColor;
+            material.color = tempColor;
             if (tempColor.a >= 1)
             {
                 status = Status.preloaded;
@@ -55,7 +55,7 @@ public class LoadingScreen : MonoBehaviour
         if(status == Status.unloading)
         {
             tempColor.a -= Time.deltaTime * unloadingFadeSpeed;
-            loadingImage.color = tempColor;
+            material.color = tempColor;
             if (tempColor.a <= 0)
             {
                 Destroy(gameObject);
@@ -69,9 +69,10 @@ public class LoadingScreen : MonoBehaviour
         status = Status.loading;
     }
 
-    public void StartPreloading()
+    public void StartPreloading(Color color)
     {
         status = Status.preloading;
+        tempColor = color;
     }
 
     public Status GetStatus()
