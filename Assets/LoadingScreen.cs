@@ -15,8 +15,20 @@ public class LoadingScreen : MonoBehaviour
     public float loadingFadeSpeed;
     public float unloadingFadeSpeed;
 
+    public GameObject[] objectsToHide;
+
     public enum Status {none, preloading, preloaded, loading, unloading}
     private Status status = Status.none;
+
+    public static LoadingScreen loadingScreen;
+
+    private void Awake()
+    {
+        if (!loadingScreen)
+        {
+            loadingScreen = this;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -58,7 +70,9 @@ public class LoadingScreen : MonoBehaviour
             material.color = tempColor;
             if (tempColor.a <= 0)
             {
-                Destroy(gameObject);
+                //Destroy(gameObject);
+                status = Status.none;
+          
             }
         }
     }
@@ -71,8 +85,11 @@ public class LoadingScreen : MonoBehaviour
 
     public void StartPreloading(Color color)
     {
+        
         status = Status.preloading;
         tempColor = color;
+
+
     }
 
     public Status GetStatus()

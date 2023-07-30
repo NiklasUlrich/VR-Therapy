@@ -170,9 +170,9 @@ Material:
     - _UVSec: 0
     - _WIND: 1
     - _Wind: 1
-    - _WindForce: 0.22
-    - _WindSpeed: 0.175
-    - _WindWavesScale: 0.25
+    - _WindForce: 0.104
+    - _WindSpeed: 0.1
+    - _WindWavesScale: 0.305
     - _Wind__________: 1
     - _ZWrite: 1
     - _____SNOW_____: 0
