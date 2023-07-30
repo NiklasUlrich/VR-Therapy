@@ -30,9 +30,7 @@ MonoBehaviour:
   - m_GUID: 6f619bdb5602b5742b763e73838a7439
     m_Address: Assets/Scenes/Nature/AN_Demo.unity
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - experience
-    - naturedemo
+    m_SerializedLabels: []
   - m_GUID: 9946c1242928a2e4e81c02161f31f0a6
     m_Address: Assets/Scenes/Nature
     m_ReadOnly: 0
