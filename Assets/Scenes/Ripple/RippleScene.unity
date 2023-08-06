@@ -144,7 +144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &152524875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5120,17 +5120,17 @@ PrefabInstance:
     - target: {fileID: 1987349954092258657, guid: ba76cc33871f0e343b2281db1526fe81,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1987349954092258657, guid: ba76cc33871f0e343b2281db1526fe81,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.50000024
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1987349954092258657, guid: ba76cc33871f0e343b2281db1526fe81,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.108
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1987349954092258657, guid: ba76cc33871f0e343b2281db1526fe81,
         type: 3}
@@ -5325,7 +5325,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -10687,6 +10687,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 103997356012471301, guid: 9748fa4a098ece34eaaf8ae91938d404,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 103997356012471301, guid: 9748fa4a098ece34eaaf8ae91938d404,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 103997356012471301, guid: 9748fa4a098ece34eaaf8ae91938d404,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 103997356012471301, guid: 9748fa4a098ece34eaaf8ae91938d404,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: RubberbandingGrabInteractable, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 103997356012471303, guid: 9748fa4a098ece34eaaf8ae91938d404,
         type: 3}
