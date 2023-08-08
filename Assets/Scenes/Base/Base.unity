@@ -130,6 +130,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5784295336044959834, guid: fae7728c78db8d549906cc1b7da44c3d,
+        type: 3}
+      propertyPath: m_RequestedTrackingOriginMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5784295336254204068, guid: fae7728c78db8d549906cc1b7da44c3d,
         type: 3}
       propertyPath: m_LocalScale.x
