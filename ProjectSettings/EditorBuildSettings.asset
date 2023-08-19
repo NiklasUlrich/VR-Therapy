@@ -4,7 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Base/Base.unity
+    guid: 7fa04d7fd0e4b7d4d9abde770c0d7b6e
+  - enabled: 1
+    path: Assets/Scenes/Nature/Nature Glade.unity
+    guid: d8cfc087e38d4d04894028c210e4b877
+  - enabled: 1
+    path: Assets/Scenes/Ripple/RippleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Water/Water.unity
+    guid: a1d0ecc50e3631143900dd913b9b6f59
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}

@@ -21,5 +21,6 @@ public class FaceCamera : MonoBehaviour
 
         // Apply the rotation to the object
         transform.rotation = rotation;
+        transform.Rotate(0, 180, 0);
     }
 }

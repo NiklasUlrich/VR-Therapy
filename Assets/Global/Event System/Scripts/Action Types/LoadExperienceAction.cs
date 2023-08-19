@@ -38,6 +38,15 @@ public class LoadExperienceAction : EventAction
             gameObject.GetComponent<MeshRenderer>().enabled = false;
 
         }
+
+        int childCount = transform.childCount;
+
+        for (int i = childCount - 1; i >= 0; i--)
+        {
+            Transform child = transform.GetChild(i);
+            Destroy(child.gameObject);
+        }
+
         startedLoading = true;
     }
 
@@ -74,7 +83,7 @@ public class LoadExperienceAction : EventAction
         }
         finished = true;
 
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 
 }

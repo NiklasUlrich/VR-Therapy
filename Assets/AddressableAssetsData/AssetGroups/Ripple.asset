@@ -36,6 +36,10 @@ MonoBehaviour:
     - scene
     - experience
     - ripple
+  - m_GUID: b174b457db4d8424a824cc01df45d627
+    m_Address: Assets/Scenes/Ripple
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7182605bdf4880c47a50e519513f028a, type: 2}
   m_SchemaSet:

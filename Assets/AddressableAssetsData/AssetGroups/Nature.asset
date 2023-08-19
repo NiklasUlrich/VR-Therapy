@@ -17,8 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 340b60d4b0d4d8a4ba92ca7d99c2fff1
   m_SerializeEntries:
-  - m_GUID: 1b7183ccc3762de4291c904092362fd8
-    m_Address: Assets/Scenes/Nature/Nature.unity
+  - m_GUID: 006e090c6331bc442bcd434a000de54f
+    m_Address: Assets/Scenes/Nature/LoadingSphere_Nature.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: c5349b943bd13094e9a12015e35937fc
